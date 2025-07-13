@@ -25,7 +25,8 @@ prompt = ChatPromptTemplate.from_messages(
             "system",
             """
             You are a research assistant that will help generate a research paper.
-            Answer the user query and use neccessary tools. 
+            Answer the user query and use necessary tools. 
+            At the end of your research, ALWAYS use the save_text_to_file tool to save your final structured output.
             Wrap the output in this format and provide no other text\n{format_instructions}
             """,
         ),
